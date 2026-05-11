@@ -53,3 +53,10 @@ if ADVANCED_LED_SETTINGS
 endif
 
 endif
+
+config APP_HEARTBEAT_PERIOD_MS
+    int "Heartbeat LED period in milliseconds"
+    default 500
+    range 100 2000
+    help
+        Time between LED toggles (half period).
