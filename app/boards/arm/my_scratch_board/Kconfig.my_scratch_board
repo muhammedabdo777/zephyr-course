@@ -1,0 +1,3 @@
+config BOARD_MY_SCRATCH_BOARD
+	bool "My Scratch Board (RPi5)"
+	select SOC_BCM2712

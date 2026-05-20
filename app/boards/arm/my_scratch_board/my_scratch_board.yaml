@@ -1,0 +1,7 @@
+identifier: my_scratch_board
+name: My Scratch Board
+type: mcu
+arch: arm64
+toolchain:
+  - zephyr
+  - cross-compile

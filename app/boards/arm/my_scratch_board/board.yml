@@ -1,0 +1,6 @@
+board:
+  name: my_scratch_board 
+  full_name: my scratch Raspberry Pi 5 (Cortex-A76)
+  vendor: raspberrypi
+  socs:
+  - name: bcm2712
