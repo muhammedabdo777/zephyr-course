@@ -1,0 +1,7 @@
+identifier: my_rpi5_board
+name: my Raspberry Pi 5
+type: mcu
+arch: arm64
+toolchain:
+  - zephyr
+  - cross-compile

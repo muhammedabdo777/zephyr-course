@@ -1,0 +1,6 @@
+# Copyright 2024 Junho Lee <junho@tsnlab.com>
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_MY_RPI5_BOARD
+	bool "My Raspberry Pi 5 Board"
+	select SOC_BCM2712
