@@ -1,0 +1,15 @@
+menuconfig MY_LED_SENSOR
+    bool "My LED Sensor Driver"
+    depends on GPIO
+    help
+      Simple LED-based sensor driver.
+      sample_fetch() turns the LED ON.
+      channel_get()  turns the LED OFF and returns a dummy value.
+
+if MY_LED_SENSOR
+
+config MY_LED_SENSOR_INIT_PRIORITY
+    int "Init priority"
+    default 80
+
+endif

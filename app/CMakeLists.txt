@@ -1,7 +1,12 @@
-cmake_minimum_required(VERSION 3.20.0)
+cmake_minimum_required(VERSION 3.20)
 
-set(KCONFIG_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/Kconfig)
-find_package(Zephyr REQUIRED)
-project(my_zephyr_app)
+set(DTS_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+set(KCONFIG_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/Kconfig.app)
 
-target_sources(app PRIVATE src/main.cpp)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(led_sensor_task1)
+
+target_sources(app PRIVATE
+    src/main.c
+    drivers/led_sensor/led_sensor.c
+)
