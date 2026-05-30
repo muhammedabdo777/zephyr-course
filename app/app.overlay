@@ -1,5 +1,13 @@
 / {
+    my_led_sensor: my-led-sensor {
+        compatible = "my-vendor,my-led-sensor";
+        led-gpios = <&gio_aon 9 GPIO_ACTIVE_LOW>;
+        status = "okay";
+    };
+
     aliases {
-        app-led = &led_act;
+        my-led-sensor = &my_led_sensor;
     };
 };
+
+/* Uses the activity LED on Raspberry Pi 5 (GPIO 9 via gio_aon) */
